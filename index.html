@@ -3,6 +3,7 @@
   <head>
     <title>hyperfixation station</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Fustat:wght@200..800&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
@@ -131,7 +132,7 @@
         text-decoration: none;
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 00;
+        font-weight: 400;
         font-style: normal;
         font-variation-settings: "ELGR" 1, "ELSH" 2;
         font-size: 1.5em;
@@ -147,7 +148,13 @@
 
       #K-pop {
         background-color: #9D94C5;
-        padding: 2em 0;
+        padding: 4em 0;
+        overflow: hidden;
+      }
+
+      .TitleWrapper {
+        text-align: center;
+        white-space: nowrap;
       }
 
       .PageTitle {
@@ -159,33 +166,18 @@
         border-radius: 10px;
         font-style: italic;
         padding: 0.2em;
-        position: relative;
         text-align: center;
-        display: block;
+        display: inline-block;
         width: 300px;
-        margin: 0 auto;
-        clear: both;
       }
 
-#musicnoteleft,
-#musicnoteright {
-  position: absolute;
-  top: 15%; 
-  width: 50px;
-}
-
-#musicnoteleft {
-  left: -60px; 
-}
-
-#musicnoteright {
-  right: -60px;
-}
-
-#musicnoteleft img,
-#musicnoteright img {
-  width: 100%;
-}
+      #musicnoteleft,
+      #musicnoteright {
+        padding: 1em;
+        width: 50px;
+        height: auto;
+        vertical-align: middle;
+      }
 
       .SectionTitle {
         color: #E6E2F2;
@@ -194,11 +186,67 @@
         font-size: 2em;
         border-radius: 10px;
         font-style: normal;
-        padding: 0.2em 0.5em 0.2em 0.5em;
-        clear: both;
-        
+
       }
 
+      .MainTitle {
+        color: #FDFFF3;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
+        font-size: 4em;
+        padding-top: 0.5em;
+        margin: 0;
+      }
+
+      .MainTitleInfo {
+        padding-top: 1em;
+        margin: 0;
+        color: #E6E2F2;
+        font-family: "Fustat", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: 10px;
+        font-style: normal;
+      }
+
+      .leftcolumn {
+        float: left;
+        width: 50%;
+        margin-left: 6em;
+        margin-top: 2em;
+      }
+
+      .leftcolumn img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50px;
+        border: 1px solid #FDFFF3;
+        padding: 0;
+        margin: 0;
+      }
+
+      .rightcolumn {
+        float: left;
+        width: 30%;
+        padding-left: 1em;
+        padding-top: 6em;
+      }
+
+      .rightcolumn p {
+        color: #FDFFF3;
+        margin: 0;
+        padding-top: 2em;
+        font-family: "Fustat", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: 10px;
+        font-style: normal;
+        width: 80%;
+      }
     </style>
   </head>
 
@@ -238,18 +286,34 @@
     </div>
 
     <div id="K-pop">
-      <h1 class="PageTitle">
-        <span id="musicnoteleft">
-          <img src="white musical note.png" alt="white musical note">
-        </span>
-        K-POP KAPSULE
-        <span id="musicnoteright">
-          <img src="white musical note.png" alt="white musical note">
-        </span>
-      </h1>
-      <h2 class="SectionTitle">
-        *Artist of The Month*
-      </h2>
+      <div class="TitleWrapper">
+        <img id="musicnoteleft" src="white musical note.png" alt="Music Note">
+        <span class="PageTitle">K-POP KAPSULE</span>
+        <img id="musicnoteright" src="white musical note.png" alt="Music Note">
+      </div>
+
+      <div class="leftcolumn">
+        <h2 class="SectionTitle">*Artist of The Month*</h2>
+        <img src="PLAVE.jpg" alt="5 men in anime-style standing in front of a blue background">
+        <h3 class="MainTitle">
+          PLAVE
+        </h3>
+        <h4 class="MainTitleInfo">
+          Active since 2023
+        </h4>
+      </div>
+      <div class="rightcolumn">
+        <p>
+          <b>About:</b><br>
+          Yes, that’s right, this is a virtual group. Composed of 5 unique individuals with various skills in singing, producing, and dancing, PLAVE is both alike and unalike any other K-pop group out there. All their skills are NOT AI generated. They are real talented people wearing motion captured suits, maintaining an anonymous real life identity to the public.
+        </p>
+        <p>
+
+          <b>Why You Will Love Them:</b> <br>
+          The best combination for anime nerds, k-pop fans, and v-tuber fans. Their music videos include a storyline where the members are “aliens” living on another planet called Asterum, hence why they are virtual. With self-produced music and choreography, PLAVE’s skills are very real and make them a great choice for those who just want to enjoy some music and have a fun time!
+
+        </p>
+      </div>
     </div>
 
     <div id="K-dramas"></div>
