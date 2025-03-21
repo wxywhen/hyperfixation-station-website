@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-ca">  
+<html lang="en-ca">
   <head>
     <title>hyperfixation station</title>
     <meta charset="UTF-8">
@@ -19,112 +19,183 @@
         margin: 0;
         padding: 0;
       }
-      
-     #Nav {
-      background-color: #676182;
-      overflow: hidden; 
-      padding: 1em;
-      position: sticky;
-      top: 0;
-    }
 
-    #Logo {
-      float: left;
-      padding-top: 0.5em;
-      margin-left: 2em;
-    }
+      #Nav {
+        background-color: #676182;
+        overflow: hidden;
+        padding: 1em;
+        position: sticky;
+        top: 0;
+      }
 
-    #Logo a {
-      display: block;
-      color: #E6E2F2;
-      text-decoration: none;
-      font-size: 1.5em;
-      font-family: "Fragment Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
-    }
+      #Logo {
+        float: left;
+        padding-top: 0.5em;
+        margin-left: 2em;
+      }
 
-    #Menu {
-      list-style-type: none;
-      margin: 0 2em 0 0;
-      padding: 0;
-      float: right;
-    }
+      #Logo a {
+        display: block;
+        color: #E6E2F2;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: "Fragment Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-    #Menu li {
-      float: left; 
-      margin-left: 0.5em; 
-    }
+      #Menu {
+        list-style-type: none;
+        margin: 0 2em 0 0;
+        padding: 0;
+        float: right;
+      }
 
-    #Menu li a {
-      display: block;
-      color: #E6E2F2;
-      text-align: center;
-      padding: 1em 0.5em;
-      text-decoration: none;  
-      font-family: "Handjet", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-      font-variation-settings: "ELGR" 1,"ELSH" 2;
-    }
+      #Menu li {
+        float: left;
+        margin-left: 0.5em;
+      }
 
-    #Menu li a:hover {
-      color: white;
-    }
-    
-    #Home {
-      margin-top: 4em;  
-      margin-bottom: 4em;
-      overflow: hidden;
-    }
-      
-    #Home img {
-      width: 50%;
-      display: block;
-      float: left; 
-      margin-right: 2em; 
-      padding: 2em;
-      background-color: #9D94C5;
-    }
-      
-    #Home .Text {
-      display: inline-block; 
-      width: 40%;
-      padding-right: 2em; 
-      box-sizing: border-box; 
-      clear: both; 
-      color: #676182;
-    }
+      #Menu li a {
+        display: block;
+        color: #E6E2F2;
+        text-align: center;
+        padding: 1em 0.5em;
+        text-decoration: none;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
+      }
 
-    #Home p {
-      margin-left: 1em;
-      margin-bottom: 0;
-      font-family: "Fustat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    }
+      #Menu li a:hover {
+        color: white;
+      }
 
-    #Home h1 {
-      margin-left: 0.5em;
-      margin-top: 0;
-      margin-bottom: 0; 
-      font-size: 2em; 
-      font-family: "Fragment Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-      #K-pop {
-        height: 1000px;
+      #Home {
+        margin-top: 4em;
+        margin-bottom: 4em;
+
+      }
+
+      #Home img {
+        width: 50%;
+        display: inline;
+        float: left;
+        margin-right: 2em;
+        padding: 2em;
         background-color: #9D94C5;
       }
 
+      #Home .Text {
+        display: inline-block;
+        width: 40%;
+        padding-right: 2em;
+        box-sizing: border-box;
+        clear: both;
+        color: #676182;
+      }
+
+      #Home .Text p {
+        margin-left: 1em;
+        margin-bottom: 0;
+        font-family: "Fustat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+      }
+
+      #Home h1 {
+        margin-left: 0.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2em;
+        font-family: "Fragment Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .QuickLinks {
+        width: 100%;
+        text-align: center;
+        padding: 2em 0;
+        margin-top: 4em;
+        clear: both;
+      }
+
+      .QuickLinks li {
+        list-style-type: none;
+        text-align: center;
+        display: inline-block;
+        padding: 1em;
+      }
+
+      .QuickLinks li a {
+        display: inline-block;
+        color: #676182;
+        padding: 0.5em 0.5em;
+        text-decoration: none;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 00;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
+        font-size: 1.5em;
+        background-color: #FDFFF3;
+        border-radius: 10px;
+        border: 1px solid #676182;
+      }
+
+      .QuickLinks li a:hover {
+        background-color: #9D94C5;
+        color: #FDFFF3;
+      }
+
+
+      #K-pop {
+        background-color: #9D94C5;
+        text-align: center;
+        padding: 2em 0;
+      }
+
+      .PageTitle {
+        background-color: #FDFFF3;
+        color: #9D94C5;
+        font-family: "Fustat", sans-serif;
+        font-weight: 500;
+        font-size: 2.5em;
+        border-radius: 10px;
+        font-style: italic;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        position: relative;
+        display: inline-block;
+      }
+
+      #musicnoteleft,
+      #musicnoteright {
+        position: absolute;
+        top: 25%;
+        width: 50px;
+      }
+
+      #musicnoteleft {
+        left: -80px;
+      }
+
+      #musicnoteright {
+        right: -80px;
+      }
+
+      #musicnoteleft img,
+      #musicnoteright img {
+        width: 100%;
+      }
     </style>
   </head>
-  
-  
+
+
   <body>
     <div id="Nav">
 
@@ -143,35 +214,56 @@
 
     <div id="Home">
       <img src="bocchi the rock.png" alt="pink haired anime girl scared of shiny and bright red hair anime girl">
-      
+
       <div class="Text">
         <p><b>Hello! Welcome to</b></p>
-      <h1>hyperfixation station (&gt;_&lt;)</h1>
-      <p>My crystal ball is telling me that you are an introvert who loves to fangirl. Well, you’ve arrived at the right place!</p>
-      <p>Here is where you can find the best picks for Asian media, including music, TV shows, and anime. You can think of this place like a little store where you can browse thorough recommendations of things to watch whenever you’re in in need of some real entertainment. Let the nerd-ing out begin!</p>
-     
+        <h1>hyperfixation station (&gt;_&lt;)</h1>
+        <p>My crystal ball is telling me that you are an introvert who loves to fangirl. Well, you’ve arrived at the right place!</p>
+        <p>Here is where you can find the best picks for Asian media, including music, TV shows, and anime. You can think of this place like a little store where you can browse thorough recommendations of things to watch whenever you’re in in need of some real entertainment. <i>Let the nerd-ing out begin!</i></p>
       </div>
-      
+
+      <div class="QuickLinks">
+        <ul>
+          <li><a href="#K-pop">K-POP</a></li>
+          <li><a href="#K-dramas">K-DRAMAS</a></li>
+          <li><a href="#Anime">ANIME</a></li>
+          <li><a href="#Chinese Shows">CHINESE SHOWS</a></li>
+          <li><a href="#Other Recs">OTHER RECS</a></li>
+        </ul>
+      </div>
+
     </div>
-    
+
+
     <div id="K-pop">
-      
+
+      <h1 class="PageTitle">
+        <span id="musicnoteleft">
+          <img src="white musical note.png" alt="white musical note">
+        </span>
+        K-POP KAPSULE
+        <span id="musicnoteright">
+          <img src="white musical note.png" alt="white musical note">
+        </span>
+      </h1>
+
+
     </div>
-    
+
     <div id="K-dramas">
-      
+
     </div>
-    
+
     <div id="Anime">
-      
+
     </div>
-    
+
     <div id="Chinese Shows">
-      
+
     </div>
-    
+
     <div id="Other Recs">
-      
+
     </div>
   </body>
 </html>
