@@ -1,4 +1,4 @@
-why isnt hr styling: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-ca">
   <head>
     <title>hyperfixation station</title>
@@ -245,22 +245,23 @@ why isnt hr styling: <!DOCTYPE html>
         width: 80%;
       }
       
-.videocolumn{
-  display: inline-block;
-  width: 40%; /* Both containers will take up 40% of the space */
-  margin-top: 2em;
-  margin-bottom: 4em;
-  float: left; /* Ensures the videos are aligned next to each other */
-  margin-right: 5%; /* To create space between the videos */
+.videocolumns-wrapper {
+  text-align: center; 
 }
 
-.videocolumn iframe{
+.videocolumn {
+  display: inline-block; 
+  width: 40%; 
+  margin: 2em 3%;
+}
+
+.videocolumn iframe {
   border: 4px solid #FDFFF3;
   padding: 0;
   margin-bottom: 1em;
 }
 
-.videocolumn h4{
+.videocolumn h4 {
   color: #FDFFF3;
   margin-top: 0.5em;
   padding: 0;
@@ -268,6 +269,7 @@ why isnt hr styling: <!DOCTYPE html>
   font-weight: 700;
   font-size: 1.5em;
 }
+
       hr {
         width: 100%;
         height: 2px;
@@ -347,26 +349,22 @@ why isnt hr styling: <!DOCTYPE html>
         </p>
       </div>
       
-      <div class="videocolumn">
-        <h4>
-          Get To Know Plave!
-        </h4>
-        <iframe width="300" height="250" src="https://www.youtube.com/embed/axIzlocKfHA?si=7CdkhowDppUn8QHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h4>
-          Fav Song Pick: Chroma Drift
-        </h4>
-        <iframe width="300" height="250" src="https://www.youtube.com/embed/eHCYzIu-ij4?si=Q_JhKFT3suCZgQl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="videocolumn">
-        <h4>
-          Funny Tech Glitches
-        </h4>
-        <iframe width="300" height="250" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h4>
-          Song Medley
-        </h4>
-        <iframe width="300" height="250" src="https://www.youtube.com/embed/LDemgZcBj7o?si=ZTlifKhm3odv6mp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+     <div class="videocolumns-wrapper">
+  <div class="videocolumn">
+    <h4>Get To Know Plave!</h4>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/axIzlocKfHA?si=7CdkhowDppUn8QHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>Fav Song Pick: Chroma Drift</h4>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/eHCYzIu-ij4?si=Q_JhKFT3suCZgQl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="videocolumn">
+    <h4>Funny Tech Glitches</h4>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>Song Medley</h4>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/LDemgZcBj7o?si=ZTlifKhm3odv6mp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
       <hr>
     </div>
 
