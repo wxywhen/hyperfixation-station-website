@@ -7,13 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Fustat:wght@200..800&family=Handjet:wght@100..900&display=swap" rel="stylesheet">
     <style>
-      /*colour palette hex codes:
-      dark purple: #676182
-      light purple: #E6E2F2
-      medium purple: #9D94C5
-      cream white: #FDFFF3
-      */
-
       body {
         background-color: #E6E2F2;
         margin: 0;
@@ -76,7 +69,6 @@
       #Home {
         margin-top: 4em;
         margin-bottom: 4em;
-
       }
 
       #Home img {
@@ -153,10 +145,8 @@
         color: #FDFFF3;
       }
 
-
       #K-pop {
         background-color: #9D94C5;
-        text-align: center;
         padding: 2em 0;
       }
 
@@ -168,37 +158,52 @@
         font-size: 2.5em;
         border-radius: 10px;
         font-style: italic;
-        padding: 0.2em 0.5em 0.2em 0.5em;
+        padding: 0.2em;
         position: relative;
-        display: inline-block;
+        text-align: center;
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        clear: both;
       }
 
-      #musicnoteleft,
-      #musicnoteright {
-        position: absolute;
-        top: 25%;
-        width: 50px;
+#musicnoteleft,
+#musicnoteright {
+  position: absolute;
+  top: 15%; 
+  width: 50px;
+}
+
+#musicnoteleft {
+  left: -60px; 
+}
+
+#musicnoteright {
+  right: -60px;
+}
+
+#musicnoteleft img,
+#musicnoteright img {
+  width: 100%;
+}
+
+      .SectionTitle {
+        color: #E6E2F2;
+        font-family: "Fustat", sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        border-radius: 10px;
+        font-style: normal;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+        clear: both;
+        
       }
 
-      #musicnoteleft {
-        left: -80px;
-      }
-
-      #musicnoteright {
-        right: -80px;
-      }
-
-      #musicnoteleft img,
-      #musicnoteright img {
-        width: 100%;
-      }
     </style>
   </head>
 
-
   <body>
     <div id="Nav">
-
       <div id="Logo">
         <a href="#Home">(&gt;_&lt;)</a>
       </div>
@@ -214,7 +219,6 @@
 
     <div id="Home">
       <img src="bocchi the rock.png" alt="pink haired anime girl scared of shiny and bright red hair anime girl">
-
       <div class="Text">
         <p><b>Hello! Welcome to</b></p>
         <h1>hyperfixation station (&gt;_&lt;)</h1>
@@ -231,12 +235,9 @@
           <li><a href="#Other Recs">OTHER RECS</a></li>
         </ul>
       </div>
-
     </div>
 
-
     <div id="K-pop">
-
       <h1 class="PageTitle">
         <span id="musicnoteleft">
           <img src="white musical note.png" alt="white musical note">
@@ -246,24 +247,14 @@
           <img src="white musical note.png" alt="white musical note">
         </span>
       </h1>
-
-
+      <h2 class="SectionTitle">
+        *Artist of The Month*
+      </h2>
     </div>
 
-    <div id="K-dramas">
-
-    </div>
-
-    <div id="Anime">
-
-    </div>
-
-    <div id="Chinese Shows">
-
-    </div>
-
-    <div id="Other Recs">
-
-    </div>
+    <div id="K-dramas"></div>
+    <div id="Anime"></div>
+    <div id="Chinese Shows"></div>
+    <div id="Other Recs"></div>
   </body>
 </html>
