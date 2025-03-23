@@ -225,7 +225,7 @@
         object-fit: cover;
         border-radius: 50px;
         border: 1px solid #FDFFF3;
-        padding: 0;      
+        margin-bottom: 2em;
       }
 
       .rightcolumn {
@@ -245,58 +245,69 @@
         font-style: normal;
         width: 80%;
       }
-      
-.videocolumns-wrapper {
-  text-align: center; 
-  margin-bottom: 4em;
-  clear: both;
-}
 
-.videocolumn {
-  display: inline-block; 
-  width: 40%; 
-  margin: 2em 3%;
-}
+      .videocolumns-wrapper {
+        text-align: center;
+        margin-bottom: 4em;
+        clear: both;
+      }
 
-.videocolumn iframe {
-  border: 4px solid #FDFFF3;
-  padding: 0;
-  margin-bottom: 1em;
-}
+      .videocolumn {
+        display: inline-block;
+        width: 40%;
+        margin: 2em 3%;
+      }
 
-.videocolumn h4 {
-  color: #FDFFF3;
-  margin-top: 0.5em;
-  padding: 0;
-  font-family: "Fustat", sans-serif;
-  font-weight: 700;
-  font-size: 1.5em;
-}
+      .videocolumn iframe {
+        border: 4px solid #FDFFF3;
+        padding: 0;
+        margin-bottom: 1em;
+      }
+
+      .videocolumn h4 {
+        color: #FDFFF3;
+        margin-top: 0.5em;
+        padding: 0;
+        font-family: "Fustat", sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
+      }
 
       hr {
         width: 100%;
         height: 1px;
         background-color: #E6E2F2;
       }
-      
-      table {
-  background-color: #FDFFF3;
-  color: #676182;
-  font-family: "Fustat", sans-serif;
-  border-collapse: collapse;
-  width: 60%;
-  text-align: center;
-        margin: 2em auto;
-}
 
-td, th {
-  border: 1px solid #9D94C5;
-  text-align: center;
-  padding: 8px;
-}
+      .centered {
+        text-align: center;
+        margin: 2em auto;
+        padding: 4em;
+        clear: both;
+      }
+
+      .centered table {
+        background-color: #FDFFF3;
+        color: #676182;
+        font-family: "Fustat", sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+        text-align: center;
+        margin: 2em auto;
+        padding: 4em;
+        clear: both;
+      }
+
+      td,
+      th {
+        border: 1px solid #9D94C5;
+        text-align: center;
+        padding: 8px;
+      }
+
       #Footer {
         background-color: #676182;
-       text-align: center;
+        text-align: center;
         padding: 5%;
       }
     </style>
@@ -366,23 +377,23 @@ td, th {
 
         </p>
       </div>
-      
-     <div class="videocolumns-wrapper">
-  <div class="videocolumn">
-    <h4>Get To Know Plave!</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/axIzlocKfHA?si=7CdkhowDppUn8QHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h4>Fav Song Pick: Chroma Drift</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/eHCYzIu-ij4?si=Q_JhKFT3suCZgQl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
 
-  <div class="videocolumn">
-    <h4>Funny Tech Glitches</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h4>Song Medley</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/LDemgZcBj7o?si=ZTlifKhm3odv6mp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
-<hr>
+      <div class="videocolumns-wrapper">
+        <div class="videocolumn">
+          <h4>Get To Know Plave!</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/axIzlocKfHA?si=7CdkhowDppUn8QHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4>Fav Song Pick: Chroma Drift</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/eHCYzIu-ij4?si=Q_JhKFT3suCZgQl7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="videocolumn">
+          <h4>Funny Tech Glitches</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4>Song Medley</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/LDemgZcBj7o?si=ZTlifKhm3odv6mp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr>
 
       <div class="leftcolumn">
         <h2 class="SectionTitle">*Gems Only Album Pick*</h2>
@@ -397,59 +408,106 @@ td, th {
       <div class="rightcolumn">
         <p>
           <b>About:</b><br>
-          Yves (pronounced “eve”) is an up and coming solo artist with a distinctive underground sound that makes her music a popular choice for when you’re feeling some type of (moody) way. 
-
-The album “I Did” features the deep house dance pop title track, “Viola” along with 4 other songs that combine R&B, synthpop, and soul genres.  Her unique calming voice, use of English lyrics, and high quality production led the album to be ranked #8 on the Billboard's top 25 best K-Pop albums of 2024 list. 
+          Yves (pronounced “eve”) is an up and coming solo artist with a distinctive underground sound that makes her music a popular choice for when you’re feeling some type of (moody) way.
+          <br>
+          The album “I Did” features the deep house dance pop title track, “Viola” along with 4 other songs that combine R&B, synthpop, and soul genres. Her unique calming voice, use of English lyrics, and high quality production led the album to be ranked #8 on the Billboard's top 25 best K-Pop albums of 2024 list.
         </p>
         <p>
 
           <b>My Song Pick:</b> Tik Tok<br>
-          
-A chill (but fun) song that compares the cycle of wasting time on Tik Tok to a toxic relationship.
+
+          A chill (but fun) song that compares the cycle of wasting time on Tik Tok to a toxic relationship.
 
         </p>
       </div>
-      
-     <div class="videocolumns-wrapper">
-  <div class="videocolumn">
-    <h4>Watch The "Viola" Music Video!</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/LFlyELZqdGI?si=0vmlUrdTY04F0dzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
 
-  <div class="videocolumn">
-    <h4>Listen To The Full Album</h4>
-    <iframe width="300" height="250" src="https://www.youtube.com/embed/O5SabSqQ8vc?si=lgplXe3H6JTnpQpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
-<hr>
+      <div class="videocolumns-wrapper">
+        <div class="videocolumn">
+          <h4>Watch The "Viola" Music Video!</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/LFlyELZqdGI?si=0vmlUrdTY04F0dzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="videocolumn">
+          <h4>Listen To The Full Album</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/O5SabSqQ8vc?si=lgplXe3H6JTnpQpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr>
       <div class="leftcolumn">
         <h2 class="SectionTitle">*Random Song Picker*</h2>
         <img src="chuu dancing.gif" alt="moving image of long haired girl dancing while holding a mic">
-        
+
+
       </div>
-           <div class="rightcolumn">
+      <div class="rightcolumn">
         <p>
           <b>Intructions:</b><br>
-Using a <a href="https://g.co/kgs/SGXvWwa" target=" ">random number generator </a> from the Internet, set the range from 1-10 and let fate decide what your song recommendation of the day will be!
+          Using a <a href="https://g.co/kgs/SGXvWwa" target=" ">random number generator </a> from the Internet, set the range from 1-10 and let fate decide what your song recommendation of the day will be!
         </p>
       </div>
- <table>
-  <tr>
-    <th>Track #</th>
-    <th>Song Name</th>
-    <th>Artist Name</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Shine (Feat. SUMIN)</td>
-    <td>YUGYEOM</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Moonlight</td>
-    <td>LOOSSEMBLE</td>
-  </tr>
-</table>
+      <div class="centered">
+        <div class="MainTitle">
+          Random Playlist
+        </div>
+        <table>
+          <tr>
+            <th>Track #</th>
+            <th>Song Name</th>
+            <th>Artist Name</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Shine (Feat. SUMIN)</td>
+            <td>YUGYEOM</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Moonlight</td>
+            <td>Loossemble</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>TOGETHER!</td>
+            <td>JANNABI</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Bubble</td>
+            <td>Red Velvet</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Insomnia</td>
+            <td>ZEROBASEONE</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>NAN CHUN</td>
+            <td>SE SO NEON</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Monster</td>
+            <td>DAY6</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Glitch</td>
+            <td>KWON EUNBI</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Lie Again</td>
+            <td>Seventeen</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>STEP</td>
+            <td>KARA</td>
+          </tr>
+        </table>
+      </div>
+
     </div>
 
     <div id="K-dramas"></div>
@@ -457,7 +515,7 @@ Using a <a href="https://g.co/kgs/SGXvWwa" target=" ">random number generator </
     <div id="Chinese Shows"></div>
     <div id="Other Recs"></div>
     <div id="Footer">
-      
+
     </div>
   </body>
 </html>
