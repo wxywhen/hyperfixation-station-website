@@ -148,11 +148,11 @@
 
       #K-pop {
         background-color: #9D94C5;
-        padding: 4em 0;
         overflow: hidden;
       }
 
       .TitleWrapper {
+        padding-top: 4em;
         text-align: center;
         white-space: nowrap;
       }
@@ -179,17 +179,37 @@
       }
 
       .SectionTitle {
-        color: #E6E2F2;
         font-family: "Fustat", sans-serif;
         font-weight: 500;
         font-size: 2em;
         border-radius: 10px;
         font-style: normal;
-
+        width: 800px;
       }
-
+      
+      #K-pop .SectionTitle {
+        color: #E6E2F2;
+      }
+      
+      #K-dramas .SectionTitle {
+        color: #676182;
+        margin-left: 6em;
+        margin-top: 2em;
+      }
+      
+      #K-dramas .SectionTitle + p {
+        color: #9D94C5;
+        margin-left: 10em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        font-family: "Fustat", sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+        font-style: normal;
+        width: 70%;
+      }
+      
       .MainTitle {
-        color: #FDFFF3;
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -199,26 +219,33 @@
         padding-top: 0;
         margin: 0;
       }
+      
+      #K-pop .MainTitle {
+       color: #FDFFF3;
+      }
 
       .MainTitleInfo {
         padding-top: 0.5em;
-        margin: 0;
-        color: #E6E2F2;
+        margin: 0;     
         font-family: "Fustat", sans-serif;
         font-weight: 400;
         font-size: 1em;
         border-radius: 10px;
         font-style: normal;
       }
-
-      .leftcolumn {
+      
+      #K-pop .MainTitleInfo {
+        color: #E6E2F2;
+      }
+      
+      #K-pop .leftcolumn {
         float: left;
         width: 50%;
         margin-left: 7em;
         margin-top: 2em;
       }
 
-      .leftcolumn img {
+      #K-pop .leftcolumn img {
         width: 500px;
         height: 500px;
         object-fit: cover;
@@ -227,14 +254,14 @@
         margin-bottom: 2em;
       }
 
-      .rightcolumn {
+      #K-pop .rightcolumn {
         float: left;
         width: 30%;
         padding-left: 1em;
         padding-top: 6em;
       }
 
-      .rightcolumn p {
+      #K-pop .rightcolumn p {
         color: #FDFFF3;
         margin: 0;
         padding-top: 2em;
@@ -245,37 +272,31 @@
         width: 80%;
       }
 
-      .videocolumns-wrapper {
+      #K-pop .videocolumns-wrapper {
         text-align: center;
         margin-bottom: 4em;
         clear: both;
       }
 
-      .videocolumn {
+      #K-pop .videocolumn {
         display: inline-block;
         width: 40%;
         margin: 2em 3%;
       }
 
-      .videocolumn iframe {
+      #K-pop .videocolumn iframe {
         border: 4px solid #FDFFF3;
         padding: 0;
         margin-bottom: 1em;
       }
 
-      .videocolumn h4 {
+      #K-pop .videocolumn h4 {
         color: #FDFFF3;
         margin-top: 0.5em;
         padding: 0;
         font-family: "Fustat", sans-serif;
         font-weight: 700;
         font-size: 1.5em;
-      }
-
-      hr {
-        width: 100%;
-        height: 1px;
-        background-color: #E6E2F2;
       }
 
       .centered {
@@ -303,11 +324,90 @@
         text-align: center;
         padding: 8px;
       }
+      
+      .row {
+        margin-left: 10em;
+      }
+      
+      .column {
+        float: left;
+        text-align: center;
+        width: 25%;
+        padding: 15px;
+      }
 
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      #K-dramas .column img {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50px;
+        border: 1px solid #676182;
+        margin-bottom: 2em;
+      }
+      
+      #K-dramas .column h2 {
+        color: #676182;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
+        font-size: 2em;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      
+      #K-dramas .column p {
+        color: #9D94C5;
+        margin: 0;
+        padding-top: 0;
+        font-family: "Fustat", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        font-style: normal;
+      }
+      
+      #K-dramas .column h4 {
+        color: #676182;
+        text-align: center;
+        margin-top: 1em;
+        padding-bottom: 0;
+        font-family: "Fustat", sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
+      }
+      
+      #K-dramas .column iframe {
+        border: 4px solid #FDFFF3;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+      
       #Footer {
         background-color: #676182;
         text-align: center;
         padding: 5%;
+      }
+      
+      hr {
+        margin-top: 2em;
+        width: 100%;
+        height: 1px;
+      }
+      
+      #K-pop hr {
+        background-color: #E6E2F2;
+      }
+      
+      #K-dramas hr {
+        background-color: #676182;
       }
     </style>
   </head>
@@ -349,9 +449,9 @@
 
     <div id="K-pop">
       <div class="TitleWrapper">
-        <img class="imageleft" src="white musical note.png" alt="Music Note">
+        <img class="imageleft" src="white musical note.png" alt="White Music Note">
         <span class="PageTitle">K-POP KAPSULE</span>
-        <img class="imageright" src="white musical note.png" alt="Music Note">
+        <img class="imageright" src="white musical note.png" alt="White Music Note">
       </div>
 
       <div class="leftcolumn">
@@ -387,7 +487,7 @@
 
         <div class="videocolumn">
           <h4>Funny Tech Glitches</h4>
-          <iframe width="300" height="250" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="250" height="200" src="https://www.youtube.com/embed/7CEul1Oq3Ls?si=0YZf0Eyvn3mJUO97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <h4>Song Medley</h4>
           <iframe width="300" height="250" src="https://www.youtube.com/embed/LDemgZcBj7o?si=ZTlifKhm3odv6mp2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -511,12 +611,66 @@
 
     <div id="K-dramas">
       <div class="TitleWrapper">
-       <div class="PageTitle">
-        K-DRAMA KAROUSEL
+        <img class="imageleft" src="white heart.png" alt="White Heart">
+        <span class="PageTitle">K-DRAMA KAROUSEL</span>
+        <img class="imageright" src="white heart.png" alt="White Heart">
       </div>
-      </div>
+      
+      <h2 class="SectionTitle">
+        *Classic K-Dramas (Basic But Amazing)*
+      </h2>
+      <p>
+        Are you a beginner viewer looking for a K-drama that mixes various genres and will best encompass the true roller coaster that is the K-drama experience? The following dramas are right for you! They are widely known for iconic scenes, dramatic plot twists, and combination of drama, romance and comedy. 
+      </p>
+      
+      <div class="row">
+        <div class="column">
+          <img src="Lovely_Runner-p1.jpg" alt="Lovely Runner drama poster  featuring a boy and girl in school uniform">
+          <h2>Lovely Runner</h2>
+          <p><b>Year Released:</b> 2024 <br>
+            The show follows Im Sol, a die-hard fan of K-pop star Ryu Sun-jae, who is mysteriously transported back to her high school days after learning of his tragic death, determined to save him from his future demise. With a plot twist that shocked everyone in just 2 episodes, this drama is regarded as one of the best in recent years!</p>
+          
+        </div>
 
-    
+        <div class="column">
+          <img src="Goblin.jpg" alt="Goblin drama poster featuring girl leaning on the back of a man in front of cloudy background">
+          <h2>Goblin</h2>
+          <p><b>Year Released:</b> 2016 <br>
+          This drama follows the story of Kim Shin, an immortal goblin who longs for death, and Ji Eun-tak, a young woman who can see ghosts, whose fates intertwine, along with the grim reaper and a rebellious chaebol heir. With historical plot lines that unravel rapidly and  fantastical characters, you may find yourself shedding a few tears at this drama’s concept of grief and love.</p>
+
+        </div>
+
+        <div class="column">
+          <img src="crash-landing-on-you.jpg" alt="Crash Landing On You poster featuring 4 people in formal attire standing in front of a city and sunset sky background">
+          <h2>Crash Landing On You</h2>
+          <p><b>Year Released:</b> 2019 <br>
+        Forbidden love, unlikely friendships, and a fish-out of water. The story follows a South Korean heiress, Yoon Se-ri, who, after a paragliding accident, lands in North Korea and encounters a North Korean army officer, Ri Jeong-hyeok, who helps her hide and navigate their contrasting worlds, leading to an unexpected romance. P.S. Did you know the main actors are married in real life?</p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h4>Trailer</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/rEBdY6OHJVI?si=m0ITVNPOboUazvou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <h4>Trailer</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/8AcNEVUzV4o?si=aXEXcURzVqOHk27h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <h4>Trailer</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/eXMjTXL2Vks?si=Kvuqj7QSxMXJIbLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr>
+      
+      <h2 class="SectionTitle">
+        *Romance That’s Only Possible In Fiction*
+      </h2>
+      <p>
+        It’s time to get overly invested in fictional characters’ relationships and start dreaming about love! These dramas are all about a silly little thing called love, not too serious/depressing, while still portraying the ups and downs of any relationship. 
+      </p>
+      
     </div>
     
     <div id="Anime"></div>
