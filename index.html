@@ -66,6 +66,10 @@
       #Menu li a:hover {
         color: white;
       }
+      
+      #Menu li a:active {
+        color: purple;
+      }
 
       #Home {
         margin-top: 4em;
@@ -116,8 +120,18 @@
         padding: 2em 0;
         margin-top: 4em;
         clear: both;
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "ELGR" 1, "ELSH" 2;
       }
-
+        
+      .QuickLinks h2 {
+        color: #676182;
+        font-size: 2em;
+      }
+      
       .QuickLinks li {
         list-style-type: none;
         text-align: center;
@@ -130,11 +144,6 @@
         color: #676182;
         padding: 0.5em 0.5em;
         text-decoration: none;
-        font-family: "Handjet", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings: "ELGR" 1, "ELSH" 2;
         font-size: 1.5em;
         background-color: #FDFFF3;
         border-radius: 10px;
@@ -190,7 +199,7 @@
         width: 800px;
       }
       
-      #K-pop .SectionTitle {
+      #K-pop .SectionTitle, #Anime .SectionTitle {
         color: #E6E2F2;
       }
       
@@ -200,8 +209,7 @@
         margin-top: 2em;
       }
       
-      #K-dramas .SectionTitle + p {
-        color: #9D94C5;
+      .SectionTitle + p {
         margin-left: 10em;
         margin-top: 1em;
         margin-bottom: 2em;
@@ -212,6 +220,13 @@
         width: 70%;
       }
       
+      #K-dramas .SectionTitle + p {
+        color: #9D94C5;
+      }
+      
+      #Anime .SectionTitle + p {
+        color: #FDFFF3;
+      }
       .MainTitle {
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
@@ -223,7 +238,7 @@
         margin: 0;
       }
       
-      #K-pop .MainTitle {
+      #K-pop .MainTitle, #Anime .MainTitle  {
        color: #FDFFF3;
       }
 
@@ -237,18 +252,18 @@
         font-style: normal;
       }
       
-      #K-pop .MainTitleInfo {
+      #K-pop .MainTitleInfo, #Anime .MainTitleInfo {
         color: #E6E2F2;
       }
       
-      #K-pop .leftcolumn {
+      #K-pop .leftcolumn, #Anime .leftcolumn {
         float: left;
         width: 50%;
         margin-left: 8em;
         margin-top: 2em;
       }
 
-      #K-pop .leftcolumn img {
+      #K-pop .leftcolumn img, #Anime .leftcolumn img {
         width: 500px;
         height: 500px;
         object-fit: cover;
@@ -257,14 +272,14 @@
         margin-bottom: 2em;
       }
 
-      #K-pop .rightcolumn {
+      #K-pop .rightcolumn, #Anime .rightcolumn {
         float: left;
         width: 30%;
         padding-left: 1em;
         padding-top: 6em;
       }
 
-      #K-pop .rightcolumn p {
+      #K-pop .rightcolumn p, #Anime .rightcolumn p{
         color: #FDFFF3;
         margin: 0;
         padding-top: 2em;
@@ -288,25 +303,25 @@
         color: darkmagenta;
       }
       
-      #K-pop .videocolumns-wrapper {
+      #K-pop .videocolumns-wrapper, #Anime .videocolumns-wrapper {
         text-align: center;
         margin-bottom: 4em;
         clear: both;
       }
 
-      #K-pop .videocolumn {
+      #K-pop .videocolumn, #Anime .videocolumn{
         display: inline-block;
         width: 40%;
         margin: 2em 3%;
       }
 
-      #K-pop .videocolumn iframe {
+      #K-pop .videocolumn iframe, #Anime .videocolumn iframe {
         border: 4px solid #FDFFF3;
         padding: 0;
         margin-bottom: 1em;
       }
 
-      #K-pop .videocolumn h4 {
+      #K-pop .videocolumn h4, #Anime .videocolumn h4 {
         color: #FDFFF3;
         margin-top: 0.5em;
         padding: 0;
@@ -352,7 +367,7 @@
         clear: both;
       }
       
-      #K-dramas .column img {
+     .column img {
         width: 80%;
         height: 300px;
         object-fit: cover;
@@ -361,8 +376,7 @@
         margin-bottom: 2em;
       }
       
-      #K-dramas .column h2 {
-        color: #676182;
+      .column h2 {
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -373,8 +387,15 @@
         padding-top: 0;
       }
       
-      #K-dramas .column p {
-        color: #9D94C5;
+      #K-dramas .column h2 {
+        color: #676182;
+      }
+      
+      #Anime .column h2 {
+       color: #E6E2F2;
+      }
+      
+      .column p {
         margin: 0;
         padding-top: 0;
         font-family: "Fustat", sans-serif;
@@ -383,8 +404,15 @@
         font-style: normal;
       }
       
-      #K-dramas .column h4 {
-        color: #676182;
+      #K-dramas .column p {
+        color: #9D94C5;
+      }
+      
+      #Anime .column p {
+        color: #FDFFF3;
+      }
+      
+      .column h4 {
         text-align: center;
         margin-top: 1em;
         padding-bottom: 0;
@@ -393,7 +421,15 @@
         font-size: 1.5em;
       }
       
-      #K-dramas .column iframe {
+      #K-dramas .column h4 {
+        color: #676182;
+      }
+      
+      #Anime .column h4 {
+        color: #FDFFF3;
+      }
+      
+      .column iframe {
         border: 4px solid #FDFFF3;
         padding: 0;
         margin-top: 0;
@@ -412,13 +448,14 @@
         height: 1px;
       }
       
-      #K-pop hr {
+      #K-pop hr, #Anime hr{
         background-color: #E6E2F2;
       }
       
       #K-dramas hr {
         background-color: #676182;
       }
+      
     </style>
   </head>
 
@@ -427,13 +464,12 @@
       <div id="Logo">
         <a href="#Home">(&gt;_&lt;)</a>
       </div>
-
+      
       <ul id="Menu">
         <li><a href="#K-pop">K-pop</a></li>
         <li><a href="#K-dramas">K-dramas</a></li>
         <li><a href="#Anime">Anime</a></li>
         <li><a href="#Chinese Shows">Chinese Shows</a></li>
-        <li><a href="#Other Recs">Other Recs</a></li>
       </ul>
     </div>
 
@@ -447,12 +483,14 @@
       </div>
 
       <div class="QuickLinks">
+        <h2>
+          --YOUR CATALOG--
+        </h2>
         <ul>
           <li><a href="#K-pop">K-POP</a></li>
           <li><a href="#K-dramas">K-DRAMAS</a></li>
           <li><a href="#Anime">ANIME</a></li>
           <li><a href="#Chinese Shows">CHINESE SHOWS</a></li>
-          <li><a href="#Other Recs">OTHER RECS</a></li>
         </ul>
       </div>
     </div>
@@ -770,7 +808,7 @@
       <hr>
       
       <h2 class="SectionTitle">
-        *Healing Shows (That Will Also Make You Cry)*
+        *Healing Shows (Grab Your Tissues)*
       </h2>
       <p>
         These shows will make you feel something again. They are focused on the human experience, whether that’s dealing with family relationships, break-ups, work, disabilities, grief, and so much more. While not as fantastical, sometimes real life can be just as crazy as an action-packed drama.
@@ -786,7 +824,7 @@
 
         <div class="column">
           <img src="Strange_Lawyer_Woo_Young-woo.png" alt="show poster featuring woman wearing a yellow suit sitting on office desk staring up">
-          <h2>The Judge From Hell</h2>
+          <h2>Extraordinary Attorney Woo</h2>
           <p><b>Year Released:</b> 2022 <br>
           The brilliant attorney Woo Young-woo starts her new job as a rookie lawyer in one of Korea’s most prominent law firms, tackling both small and big tricky cases, while dealing with the challenges that come with being a woman on the autism spectrum. This drama is lighthearted, focused on the adorable Woo Young-Woo as she navigates her court life, an absent mother, and a possible budding romance with her co-worker. </p>
 
@@ -794,7 +832,7 @@
 
         <div class="column">
           <img src="Our_Beloved_Summer.jpg" alt="show poster featuring man and woman leaning against outside white wall with greenery">
-          <h2>Alchemy of Souls</h2>
+          <h2>Our Beloved Summer</h2>
           <p><b>Year Released:</b> 2021 <br>
        A coming of age, romantic comedy revolving around ex-lovers who broke up with a promise never to meet again. As luck would have it, the documentary they filmed ten years ago in high school went viral and they are forced to face the cameras together again by their producer friend. The series depicts their complicated feelings and growth, as well as exploring whether a failed relationship can be healed again.</p>
         </div>
@@ -822,12 +860,90 @@
         <span class="PageTitle">ANIME ARENA</span>
         <img class="imageright" src="white star.png" alt="White Star">
       </div>
-    
+      
+      <div class="leftcolumn">
+        <h2 class="SectionTitle">*Anime Of The Season*</h2>
+           <img src="apothecary diaries.jpg" alt="anime girl and guy dressed in ancient Chinese clothiing in front of starry night background">
+        <h3 class="MainTitle">
+          The Apothecary Diaries
+        </h3>
+        <h4 class="MainTitleInfo">
+          <b>Genres:</b> Mystery, Drama, History, Romance <br>
+          <b>Released:</b> 2023
+        </h4>
+      </div>
+      <div class="rightcolumn">
+        <p>
+          <b>About:</b><br>
+          "The Apothecary Diaries" is set in an ancient Imperial China background. It follows Maomao, a young apothecary kidnapped and sold to the Imperial Palace, where she uses her knowledge to solve medical mysteries and intrigue, ultimately drawing the attention of a powerful eunuch and becoming involved in the palace's secrets. 
+        </p> 
+        <p>
+          <b>Why You Should Watch:</b><br>
+          The mysteries in this show are unpredictable, yet very logical when they are revealed. With episodes that are seemingly separate stories, we later find out that they are all connected to a bigger storyline. Not to mention, Maomao is one of the greatest female protagonists of all time. We always look forward to what her crazy obsession to medicine and curiosity will lead her to next! (p.s its always funny to see Maomao’s obliviousness towards a certain someone’s feelings towards her)
+        </p>
+      </div>
+      
+      <div class="videocolumns-wrapper">
+        <div class="videocolumn">
+          <h4>Watch The Trailer!</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/hHrFLR-P4Bc?si=_R51ms3tJHM0jcl-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="videocolumn">
+          <h4>Listen To The OP</h4>
+          <iframe width="300" height="250" src="https://www.youtube.com/embed/z9JZB08qy44?si=pfqYGlR4RmlVjDAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <hr>
+      
+      <h2 class="SectionTitle">
+        *Anime For Nerds*
+      </h2>
+      <p>
+        Everyone can relate with being a nerd about something. Whether you’re a closet manga reader, a hardcore idol fan, or a rock lover, these anime will make you feel seen! Although, Oshi No Ko may disorient you a little. So be warned. Happy watching!
+      </p>
+      
+      <div class="row">
+        <div class="column">
+          <img src="love is hard for otaku.jpg" alt="anime poster of one glasses anime guy and a pink haired anime girl dressed as office workers">
+          <h2>Love Is Hard For Otaku</h2>
+          <p><b>Year Released:</b> 2019 <br>
+            The story follows 4 of your typical mature office workers. While they all look relatively normal on the surface, the truth is that they’re all secretly nerds about something embarassing! For instance, co-workers Narumi and Hirotaka. Narumi is a secret yaoi fan, and Hirotaka, a hardcore gamer. What happens when the secret is out? This is comedic slice-of-life romance will make you laugh while finding comfort in embracing your  nerdy passions! </p>
+        </div>
+
+        <div class="column">
+          <img src="oshi no ko.jpg" alt="anime poster of two blond fraternal twins in school outfits with other colourful characters in the background">
+          <h2>Oshi No Ko</h2>
+          <p><b>Year Released:</b> 2023 <br>
+         A  mysterious and intense story about the various ups and downs of the entertainment industry. We follow a gynecologist, Gorou, who is a big fan of idol Ai Hoshino, who is also his patient. After Gorou's murder, he is reincarnated as her newborn son, Aqua, along with his terminal patient, Ruby, who is reborn as his twin sister, and they navigate the Japanese entertainment industry. Probably includes one of the best opening episodes in the history of anime. </p>
+
+        </div>
+
+        <div class="column">
+          <img src="bocchi the rock anime poster.jpg" alt="anime poster featuring a band made up of young highschool girls">
+          <h2>Bocchi The Rock</h2>
+          <p><b>Year Released:</b> 2022 <br>
+          This slice-of-life story follows the story of the introverted, socially anxious highschooler Hitori "Bocchi-chan" whose only hobby is posting guitar covers to her anonymous YouTube account.  After being unable to reject the invitation to join  the Kessoku Band, will Bocchi be able to overcome her shyness and stand on stage? And maybe finally make some friends? A show with painfully relatable and comedic moments for the introverts out there!</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="column">
+          <h4>Iconic OP</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/rEBdY6OHJVI?si=oDS8HzQShFv0UXOD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <h4>Trailer</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/M-PHcxPyasA?si=--Q-IVuTeYdLWp5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+          <h4>Trailer</h4>
+          <iframe width="250" height="150" src="https://www.youtube.com/embed/eXMjTXL2Vks?si=-y5fqR0TWhx5V4df" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
     
     
     <div id="Chinese Shows"></div>
-    <div id="Other Recs"></div>
     <div id="Footer">
 
     </div>
