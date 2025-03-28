@@ -194,7 +194,7 @@
         vertical-align: middle;
       }
 
-      .SectionTitle {
+      .SectionTitle1 {
         font-family: "Fustat", sans-serif;
         font-weight: 500;
         font-size: 2em;
@@ -203,23 +203,27 @@
         width: 800px;
       }
       
-      #K-pop .SectionTitle {
+      .SectionTitle2 {
+        font-family: "Fustat", sans-serif;
+        font-weight: 500;
+        font-size: 2em;
+        border-radius: 10px;
+        font-style: normal;
+        width: 800px;
+        margin-left: 6em;
+        margin-top: 2em;
+      }
+      
+      
+      #K-pop .SectionTitle1, #Anime .SectionTitle1, #Anime .SectionTitle2 {
         color: #E6E2F2;
       }
       
-      #K-dramas .SectionTitle {
+      #K-dramas .SectionTitle2{
         color: #676182;
-        margin-left: 6em;
-        margin-top: 2em;
       }
       
-      #Anime .SectionTitle {
-        color: #E6E2F2;
-        margin-left: 6em;
-        margin-top: 2em;
-      }
-      
-      .SectionTitle + p {
+      .SectionTitle2 + p {
         margin-left: 10em;
         margin-top: 1em;
         margin-bottom: 2em;
@@ -230,13 +234,14 @@
         width: 70%;
       }
       
-      #K-dramas .SectionTitle + p {
+      #K-dramas .SectionTitle2 + p {
         color: #9D94C5;
       }
       
-      #Anime .SectionTitle + p {
+      #Anime .SectionTitle2 + p {
         color: #FDFFF3;
       }
+      
       .MainTitle {
         font-family: "Handjet", sans-serif;
         font-optical-sizing: auto;
@@ -313,9 +318,11 @@
         color: darkmagenta;
       }
       
-      #K-pop .videocolumns-wrapper, #Anime .videocolumns-wrapper {
+      #K-pop .videocolumns-wrapper::after, #Anime .videocolumns-wrapper::after {
         text-align: center;
         margin-bottom: 4em;
+        content: "";
+        display: table;
         clear: both;
       }
 
@@ -514,7 +521,7 @@
       </div>
 
       <div class="leftcolumn">
-        <h2 class="SectionTitle">*Artist of The Month*</h2>
+        <h2 class="SectionTitle1">*Artist of The Month*</h2>
         <img src="PLAVE.jpg" alt="5 men in anime-style standing in front of a blue background">
         <h3 class="MainTitle">
           PLAVE
@@ -554,7 +561,7 @@
       <hr>
 
       <div class="leftcolumn">
-        <h2 class="SectionTitle">*Gems Only Album Pick*</h2>
+        <h2 class="SectionTitle1">*Gems Only Album Pick*</h2>
         <img src="Yves I Did.jpg" alt="album cover featuring black hair girl with eyes closed on gray background">
         <h3 class="MainTitle">
           I DID (By Yves)
@@ -592,7 +599,7 @@
       </div>
       <hr>
       <div class="leftcolumn">
-        <h2 class="SectionTitle">*Random Song Rec Picker*</h2>
+        <h2 class="SectionTitle1">*Random Song Rec Picker*</h2>
         <img src="chuu dancing.gif" alt="moving image of long haired girl dancing while holding a mic">
 
 
@@ -674,7 +681,7 @@
         <img class="imageright" src="white heart.png" alt="White Heart">
       </div>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Classic K-Dramas (Basic But Amazing)*
       </h2>
       <p>
@@ -722,7 +729,7 @@
       </div>
       <hr>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Romance That’s Only Possible In Fiction*
       </h2>
       <p>
@@ -770,7 +777,7 @@
       </div>
       <hr>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Intense Shows (You Will Stay Up Late Watching)*
       </h2>
       <p>
@@ -818,7 +825,7 @@
       </div>
       <hr>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Healing Shows (Grab Your Tissues)*
       </h2>
       <p>
@@ -873,7 +880,7 @@
       </div>
       
       <div class="leftcolumn">
-        <h2 class="SectionTitle">*Anime Of The Season*</h2>
+        <h2 class="SectionTitle1">*Anime Of The Season*</h2>
            <img src="apothecary diaries.jpg" alt="anime girl and guy dressed in ancient Chinese clothiing in front of starry night background">
         <h3 class="MainTitle">
           The Apothecary Diaries
@@ -906,7 +913,7 @@
       </div>
       <hr>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Anime For Nerds*
       </h2>
       <p>
@@ -953,7 +960,7 @@
       </div>
       <hr>
       
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Beautiful Animation, But Am I Why Crying*
       </h2>
       <p>
@@ -1000,7 +1007,7 @@
       </div>
       <hr>
           
-      <h2 class="SectionTitle">
+      <h2 class="SectionTitle2">
         *Pick Your Poison (3 Vastly Different Shows)*
       </h2>
       <p>
