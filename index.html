@@ -318,21 +318,22 @@
         color: darkmagenta;
       }
       
-      #K-pop .videocolumns-wrapper::after, #Anime .videocolumns-wrapper::after {
-        margin-bottom: 4em;
-        content: "";
-        display: table;
-        clear: both;
-      }
 
       #K-pop .videocolumn, #Anime .videocolumn{
         display: inline-block;
         text-align: center;
         float: left;
+        margin-left: 5em;
         width: 40%;
-        margin: 2em 3%;
       }
-
+      
+     #K-pop .videocolumns-wrapper::after, #Anime .videocolumns-wrapper::after {
+        margin-bottom: 4em;
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
       #K-pop .videocolumn iframe, #Anime .videocolumn iframe {
         border: 4px solid #FDFFF3;
         padding: 0;
