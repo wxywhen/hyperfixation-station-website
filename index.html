@@ -310,11 +310,18 @@
         margin-top: 2em;
         padding-bottom: 2em;
       }
+      
+      #K-pop .columns-wrapper::after,
+      #Anime .columns-wrapper::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
       #K-pop .leftcolumn img,
       #Anime .leftcolumn img {
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         object-fit: cover;
         border-radius: 50px;
         border: 1px solid #FDFFF3;
@@ -387,7 +394,8 @@
         font-weight: 700;
         font-size: 1.5em;
       }
-
+  
+      
       table {
         background-color: #FDFFF3;
         color: #676182;
@@ -395,12 +403,13 @@
         border-collapse: collapse;
         width: 30%;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 2em;
         margin-bottom: 5em;
         padding: 4em;
-
       }
-
+      
       td,
       th {
         border: 1px solid #9D94C5;
@@ -607,8 +616,8 @@
         <span class="PageTitle">K-POP KAPSULE</span>
         <img class="imageright" src="white musical note.png" alt="White Music Note">
       </div>
-
-      <div class="leftcolumn">
+    <div class="columns-wrapper">
+           <div class="leftcolumn">
         <h2 class="SectionTitle1">*Artist of The Month*</h2>
         <img src="PLAVE.jpg" alt="5 men in anime-style standing in front of a blue background">
         <h3 class="MainTitle">
@@ -630,6 +639,8 @@
 
         </p>
       </div>
+      </div>
+ 
 
       <div class="videocolumns-wrapper">
         <div class="videocolumn">
@@ -652,7 +663,7 @@
         </div>
       </div>
       <hr>
-
+ <div class="columns-wrapper">
       <div class="leftcolumn">
         <h2 class="SectionTitle1">*Gems Only Album Pick*</h2>
         <img src="Yves I Did.jpg" alt="album cover featuring black hair girl with eyes closed on gray background">
@@ -678,7 +689,7 @@
 
         </p>
       </div>
-
+   </div>
       <div class="videocolumns-wrapper">
         <div class="videocolumn">
           <h4>Watch The "Viola" Music Video!</h4>
@@ -691,6 +702,7 @@
         </div>
       </div>
       <hr>
+       <div class="columns-wrapper">
       <div class="leftcolumn">
         <h2 class="SectionTitle1">*Random Song Rec Picker*</h2>
         <img src="chuu dancing.gif" alt="moving image of long haired girl dancing while holding a mic">
@@ -702,11 +714,9 @@
           <b>Intructions:</b><br>
           Using a <a href="https://g.co/kgs/SGXvWwa" target=" ">random number generator </a> from the Internet, set the range from 1-10 and let fate decide what your song recommendation of the day will be! See your random playlist below:
         </p>
-      </div>
-
-      <div class="MainTitle">
+         <h3 class="MainTitle">
         Random Playlist
-      </div>
+      </h3>
       <table>
         <tr>
           <th>Track #</th>
@@ -764,6 +774,9 @@
           <td>KARA</td>
         </tr>
       </table>
+      </div>
+      </div>
+     
 
     </div>
 
